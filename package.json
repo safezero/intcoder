@@ -1,0 +1,26 @@
+{
+  "name": "intcoder",
+  "version": "0.0.0",
+  "description": "Encoded/decode integers into uint8Arrays",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/safezero/intcoder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/safezero/intcoder/issues"
+  },
+  "homepage": "https://github.com/safezero/intcoder#readme",
+  "dependencies": {
+    "arguguard": "^2.1.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.3.0"
+  }
+}
