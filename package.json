@@ -1,6 +1,6 @@
 {
   "name": "intcoder",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Encoded/decode integers into uint8Arrays",
   "main": "index.js",
   "scripts": {
