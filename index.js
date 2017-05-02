@@ -15,7 +15,7 @@ function nextByte(integer, encodingArray) {
 
 module.exports.encode = function encode(integer) {
   arguguard('intcoder.encode', [integerValidator], arguments)
-  return nextByte(integer, [])
+  return new Uint8Array(nextByte(integer, []))
 }
 
 module.exports.decode = function decode(uint8Array) {

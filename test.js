@@ -21,10 +21,10 @@ describe('intcoder', () => {
     const integer = param[0]
     const array = param[1]
     it(`should encode ${integer} to [${array}]`, () => {
-      intcoder.encode(integer).should.deep.equal(array)
+      intcoder.encode(integer).should.deep.equal(new Uint8Array(array))
     })
     it(`should decode [${array}] to ${integer}`, () => {
-      intcoder.decode(new Uint8Array(array)).should.deep.equal(integer)
+      intcoder.decode(new Uint8Array(array)).should.equal(integer)
     })
   })
 })
