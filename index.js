@@ -1,8 +1,16 @@
 const arguguard = require('arguguard')
 const Validator = require('arguguard/lib/Validator')
 
-const integerValidator = new Validator('Integer', () => {
-
+const integerValidator = new Validator('Integer', (int) => {
+  if (isNaN(int)) {
+    throw new Error('Should be a number')
+  }
+  if (!Number.isInteger(int)) {
+    throw new Error('Should be an integer')
+  }
+  if (int < 0) {
+    throw new Error('Should be non-negative')
+  }
 })
 
 function nextByte(integer, encodingArray) {
